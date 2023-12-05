@@ -91,7 +91,7 @@ class WSGParser {
 	generateCSV(self) {
 		var csv = ""
 		csv += '<h1>' + 'WSG Sections and Guidelines and Success criteria' + '</h1>' + "\n"
-		var defaultHeadings = 'Title,Impact,Effort'
+		var defaultHeadings = 'Title,Impact,Effort,Description'
 		var userHeadings = 'Status,Notes'
 		csv += defaultHeadings + ',' + userHeadings + "\n"
 		for (const sectionId in this.wsg.sections) {
@@ -101,7 +101,7 @@ class WSGParser {
 				csv += guideline.title + ',' + guideline.impact + ',' + guideline.effort + "\n"
 				for (const successCriterionId in guideline.successCriteria) {
 					let successCriterion = guideline.successCriteria[successCriterionId]
-					csv += successCriterion.title + "\n"
+					csv += successCriterion.title + ',' + ',,' + '"' + successCriterion.description + '"' + "\n"
 				}
 			}
 		}
