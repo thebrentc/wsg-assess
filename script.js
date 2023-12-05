@@ -39,6 +39,7 @@ class WSGParser {
 					self.wsg.sections[sectionId] = {
 						'id': sectionId,
 						'title': h2.innerText,
+						'link': self.url + '#' + sectionId,
 						'guidelines': {},
 						'impact': null,
 						'effort': null
@@ -53,6 +54,7 @@ class WSGParser {
 							self.wsg.sections[sectionId].guidelines[guidelineId] = {
 								'id': guidelineId,
 								'title': h3.innerText,
+								'link': self.url + '#' + guidelineId,
 								'successCriteria': {}
 							}
                             /* Get Guideline impact and effort ratings */
@@ -72,6 +74,7 @@ class WSGParser {
 								self.wsg.sections[sectionId].guidelines[guidelineId].successCriteria[successCriterionId] = {
 									'id': successCriterionId,
 									'title': h4.innerText,
+									'link': self.url + '#' + successCriterionId,
 									'description': description
 								}
                             }
@@ -91,17 +94,22 @@ class WSGParser {
 	generateCSV(self) {
 		var csv = ""
 		csv += '<h1>' + 'WSG Sections and Guidelines and Success criteria' + '</h1>' + "\n"
-		var defaultHeadings = 'Title,Impact,Effort,Description'
+		var defaultHeadings = 'Title,Link,Impact,Effort,Description'
 		var userHeadings = 'Status,Notes'
 		csv += defaultHeadings + ',' + userHeadings + "\n"
 		for (const sectionId in this.wsg.sections) {
-			csv += this.wsg.sections[sectionId].title + "\n"
+			csv += '<a href="'+ this.wsg.sections[sectionId].link +'">' + this.wsg.sections[sectionId].title + '<a/>' 
+			csv += ',' + this.wsg.sections[sectionId].link + "\n"
 			for (const guidelineId in this.wsg.sections[sectionId].guidelines) {
 				var guideline = this.wsg.sections[sectionId].guidelines[guidelineId]
-				csv += guideline.title + ',' + guideline.impact + ',' + guideline.effort + "\n"
+				csv += '<a href="'+ guideline.link +'">' + guideline.title + '</a>'
+				csv += ',' + guideline.link 
+				csv += ',' + guideline.impact + ',' + guideline.effort + "\n"
 				for (const successCriterionId in guideline.successCriteria) {
 					let successCriterion = guideline.successCriteria[successCriterionId]
-					csv += successCriterion.title + ',' + ',,' + '"' + successCriterion.description + '"' + "\n"
+					csv += '<a href="'+ successCriterion.link +'">' + successCriterion.title + '</a>'
+					csv += ',' + successCriterion.link
+					csv += ',' + ',,' + '"' + successCriterion.description + '"' + "\n"
 				}
 			}
 		}
