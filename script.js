@@ -9,6 +9,12 @@ class WSGParser {
                 this.generateJSON()
             }.bind(this)
         );
+		document.getElementById('generate-csv-button').addEventListener(
+            "click",
+            function () {
+                this.generateCSV()
+            }.bind(this)
+        );
     }
 
     parse() {
@@ -80,6 +86,26 @@ class WSGParser {
 	generateJSON() {
 		if (!this.wsq) { this.parse() }
 		document.getElementById('output').innerHTML = '<pre>' + JSON.stringify(this.wsg, null, 2) + '</pre>'
+	}
+
+	generateCSV(self) {
+		var csv = ""
+		csv += '<h1>' + 'WSG Sections and Guidelines and Success criteria' + '</h1>' + "\n"
+		var defaultHeadings = 'Title,Impact,Effort'
+		var userHeadings = 'Status,Notes'
+		csv += defaultHeadings + ',' + userHeadings + "\n"
+		for (const sectionId in this.wsg.sections) {
+			csv += this.wsg.sections[sectionId].title + "\n"
+			for (const guidelineId in this.wsg.sections[sectionId].guidelines) {
+				var guideline = this.wsg.sections[sectionId].guidelines[guidelineId]
+				csv += guideline.title + ',' + guideline.impact + ',' + guideline.effort + "\n"
+				for (const successCriterionId in guideline.successCriteria) {
+					let successCriterion = guideline.successCriteria[successCriterionId]
+					csv += successCriterion.title + "\n"
+				}
+			}
+		}
+		document.getElementById('output').innerHTML = '<pre>' + csv + '</pre>'
 	}
 }
 

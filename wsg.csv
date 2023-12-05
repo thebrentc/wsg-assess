@@ -1,0 +1,338 @@
+WSG Sections and Guidelines and Success criteria
+
+Title,Impact,Effort,Status,Notes
+2. User-Experience Design
+2.1 Undertake Systemic Impacts Mapping,Medium,Medium
+Success Criterion - External Variables
+2.2 Assess and Research Visitor Needs,Medium,High
+Success Criterion - Identify And Define
+Success Criterion - Visitor Constraints
+Success Criterion - Barriers And Access
+Success Criterion - Barrier Removal
+Success Criterion - Seat At The Table
+2.3 Research Non-Visitor's Needs,Medium,Medium
+Success Criterion - Non-Human Impact
+2.4 Consider Sustainability in Early Ideation,Low,Low
+Success Criterion - Wireframes And Prototypes
+Success Criterion - Participation And Testing
+2.5 Account for Stakeholder Issues,Medium,Medium
+Success Criterion - Human-Centered Brainstorming
+Success Criterion - Ecological Brainstorming
+2.6 Create a Frictionless Lightweight Experience by Default,Medium,Medium
+Success Criterion - Performance By Default
+Success Criterion - Efficient Paths
+Success Criterion - Patterns For Efficiency
+Success Criterion - Distraction-Free Design
+Success Criterion - Eliminate The Non-Essential
+Success Criterion - User-Initiated Actionable Content
+2.7 Avoid Unnecessary or an Overabundance of Assets,High,Medium
+Success Criterion - Decorative Design
+2.8 Ensure Navigation and Way-Finding Are Well-Structured,Low,Low
+Success Criterion - Navigation And Search
+Success Criterion - Navigable Sitemaps
+Success Criterion - New Content
+2.9 Respect the Visitor's Attention,Medium,Low
+Success Criterion - Respecting Attention
+Success Criterion - Avoid Distraction
+Success Criterion - Avoid Attention-keeping
+2.10 Use Recognized Design Patterns,Medium,Low
+Success Criterion - Design Patterns
+2.11 Avoid Manipulative Patterns,High,Medium
+Success Criterion - Dark and Deceptive Design Patterns
+Success Criterion - Using Advertisements
+Success Criterion - Page Tracking
+2.12 Document and Share Project Outputs,Medium,High
+Success Criterion - Deliverables Reusability
+Success Criterion - Deliverables Documentation
+2.13 Use a Design System To Prioritize Interface Consistency,Low,Medium
+Success Criterion - Design System
+2.14 Write With Purpose, in an Accessible, Easy To Understand Format,Low,Low
+Success Criterion - Write Clearly
+Success Criterion - Content Formatting
+Success Criterion - Search Engine Optimization (SEO)
+2.15 Take a More Sustainable Approach to Image Assets,High,Low
+Success Criterion - Need For Images
+Success Criterion - Optimize Images
+Success Criterion - Lazy Loading
+Success Criterion - Sizing And Deactivation
+Success Criterion - Management And Usage
+2.16 Take a More Sustainable Approach to Media Assets,High,Medium
+Success Criterion - Need For Media
+Success Criterion - Optimize Media
+Success Criterion - Lazy Loading
+Success Criterion - Labels And Choice
+Success Criterion - Management And Usage
+2.17 Take a More Sustainable Approach to Animation,Medium,Low
+Success Criterion - Need For Animation
+Success Criterion - Avoid Overburdening
+Success Criterion - Control Animation
+2.18 Take a More Sustainable Approach to Typefaces,Medium,Low
+Success Criterion - Default Typefaces
+Success Criterion - Font Optimization
+2.19 Provide Suitable Alternatives to Web Assets,Medium,Medium
+Success Criterion - Open Formats
+Success Criterion - Font Subsetting
+Success Criterion - Alternative Text
+Success Criterion - Audio Alternatives
+Success Criterion - Video Alternatives
+2.20 Provide Accessible, Usable, Minimal Web Forms,Low,Low
+Success Criterion - Form Simplicity
+Success Criterion - Form Functionality
+2.21 Support Non-Graphic Ways To Interact With Content,Low,Medium
+Success Criterion - Alternative Interactions
+2.22 Provide Useful Notifications To Improve The Visitor's Journey,Low,Low
+Success Criterion - Notification Justification
+Success Criterion - Notification Control
+Success Criterion - Prompts And Responses
+2.23 Reduce the Impact of Downloadable or Physical Documents,Medium,Low
+Success Criterion - Printing Documents
+Success Criterion - Optimize Documents
+Success Criterion - Optimize Delivery
+Success Criterion - Labels And Choice
+2.24 Create a Stakeholder-Focused Testing & Prototyping Policy,High,Medium
+Success Criterion - New Features And Perspectives
+Success Criterion - Resourcing And Viability
+Success Criterion - Training And Onboarding
+Success Criterion - Testing And Validation
+2.25 Conduct Regular Audits, Regression, and Non-Regression Tests,Medium,Medium
+Success Criterion - Regular Issue Testing
+Success Criterion - Non-Regression Tests
+Success Criterion - Regression Tests
+2.26 Analyze The Performance Of The Visitor Journey,Medium,Low
+Success Criterion - Measurement And Compliance
+2.27 Incorporate Value Testing Into Each Major Release-Cycle,Medium,Low
+Success Criterion - Usage Changes
+2.28 Incorporate Usability Testing Into Each Minor Release-Cycle,Medium,Medium
+Success Criterion - Usability Testing
+2.29 Incorporate Compatibility Testing Into Each Release-Cycle,High,Medium
+Success Criterion - Compatibility Policy
+Success Criterion - Maintaining Compatibility
+Success Criterion - Frequent Testing
+Success Criterion - Mobile Friendly
+Success Criterion - Progressive Web Application's (PWAs)
+3. Web Development
+3.1 Identify Relevant Technical Indicators,Medium,Medium
+Success Criterion - Performance Goals
+3.2 Minify Your HTML, CSS, and JavaScript,Low,Low
+Success Criterion - Minify Code
+3.3 Use Code-Splitting Within Projects,Medium,Low
+Success Criterion - Code Splitting
+3.4 Apply Tree Shaking To Code,Medium,Medium
+Success Criterion - Remove Redundancy
+3.5 Ensure Your Solutions Are Accessible,High,Medium
+Success Criterion - Accessibility Compliance
+Success Criterion - Enhancing For Accessibility
+Success Criterion - Electronic Inequalities
+3.6 Avoid Code Duplication,Medium,Medium
+Success Criterion - Remove Or Simplify
+Success Criterion - Iteration Over Recreation
+Success Criterion - Organize Code Arrangement
+3.7 Rigorously Assess Third-Party Services,High,Medium
+Success Criterion - Assess Third-Parties
+Success Criterion - Third-party Implementation
+Success Criterion - Libraries And Frameworks
+Success Criterion - Self-Hosting
+Success Criterion - Avoiding Dependency
+3.8 Use HTML Elements Correctly,Medium,Medium
+Success Criterion - Semantic Code
+Success Criterion - Optional Features
+Success Criterion - Avoid Non-standard Code
+Success Criterion - Custom Code
+3.9 Resolve Render Blocking Content,Medium,Low
+Success Criterion - Asynchronous Code
+Success Criterion - Priority Loading
+3.10 Provide Code-Based Way-Finding Mechanisms,Low,Low
+Success Criterion - Metadata And Microdata
+Success Criterion - Search Engines
+Success Criterion - Accessibility Aids
+3.11 Validate Form Errors and External Input,Medium,Low
+Success Criterion - Error Validation
+Success Criterion - Label Elements
+Success Criterion - Allow Paste
+3.12 Use Metadata Correctly,Medium,Low
+Success Criterion - Required Elements
+Success Criterion - Meta Tags
+Success Criterion - Structured Data
+3.13 Adapt to User Preferences,Medium,Low
+Success Criterion - Media and Preference Queries
+3.14 Develop a Mobile-First Layout,Medium,Low
+Success Criterion - Mobile-First
+Success Criterion - Responsive Design
+Success Criterion - Carbon Aware Design
+Success Criterion - Alternative Browsing
+3.15 Use Beneficial JavaScript and Its APIs,High,Medium
+Success Criterion - Beneficial JavaScript
+Success Criterion - API Requests
+3.16 Ensure Your Scripts Are Secure,Medium,Medium
+Success Criterion - Script Security
+3.17 Manage Dependencies Appropriately,Medium,Low
+Success Criterion - Dependency Management
+Success Criterion - Dependency Necessity
+Success Criterion - Dependency Updates
+3.18 Include Files That Are Automatically Expected,Low,Low
+Success Criterion - Expected File Formats
+3.19 Use Plaintext Formats When Appropriate,Low,Low
+Success Criterion - Beneficial File Formats
+3.20 Avoid Using Deprecated or Proprietary Code,Low,Medium
+Success Criterion - Deprecated Code
+Success Criterion - Outdated Code
+3.21 Align Technical Requirements With Sustainability Goals,Medium,Medium
+Success Criterion - Identify Requirements
+Success Criterion - Optimized Methodology
+Success Criterion - Static VS Dynamic
+Success Criterion - Expandability Considerations
+Success Criterion - Interface Impact
+3.22 Use the Latest Stable Language Version,Medium,Medium
+Success Criterion - Versioning
+3.23 Take Advantage of Native Features,Medium,Low
+Success Criterion - Native Over Custom
+3.24 Run Fewer, Simpler Queries As Possible,Medium,Low
+Success Criterion - Database Queries
+4. Hosting, Infrastructure and Systems
+4.1 Choose a Sustainable Hosting Provider,High,Medium
+Success Criterion - Monitor Metrics
+Success Criterion - Equipment Longevity
+Success Criterion - Recycling Waste
+Success Criterion - Renewable Electricity
+Success Criterion - Remaining Emissions
+4.2 Optimize Browser Caching,High,High
+Success Criterion - Server-side Caching
+Success Criterion - Offline Access
+4.3 Compress Your Files,High,Low
+Success Criterion - Server-side Compression
+Success Criterion - Media Compression
+4.4 Use Error Pages and Redirects Carefully,Low,Low
+Success Criterion - Error Pages
+Success Criterion - Redirection
+4.5 Limit Usage of Additional Environments,Medium,Low
+Success Criterion - Unused Environments
+4.6 Automate To Fit the Needs,High,Medium
+Success Criterion - Automate Tasks
+Success Criterion - Necessitate Tasks
+Success Criterion - Automated Scaling
+Success Criterion - Security Tooling
+4.7 Maintain a Relevant Refresh Frequency,Medium,Low
+Success Criterion - Refresh Frequency
+4.8 Be Mindful of Duplicate Data,Low,Low
+Success Criterion - Data Backups
+4.9 Enable Asynchronous Processing and Communication,Medium,Medium
+Success Criterion - Batch Processing
+Success Criterion - Protocol Usage
+4.10 Consider CDNs and Edge Caching,Medium,Low
+Success Criterion - Content Delivery Network's (CDNs)
+Success Criterion - Sustainability Commitment
+Success Criterion - Local Servers
+Success Criterion - Avoid Caching Inappropriate Resources
+4.11 Use the Lowest Infrastructure Tier Meeting Business Requirements,Medium,Medium
+Success Criterion - Lowest Requirements
+4.12 Store Data According to Visitor Needs,Low,Low
+Success Criterion - Reduce Redundancy
+Success Criterion - Expiration Dates
+Success Criterion - Classify And Tag
+Success Criterion - Justify Storage
+Success Criterion - Optimize Logging
+Success Criterion - Compress Storage
+5. Business Strategy and Product Management
+5.1 Have an Ethical and Sustainability Product Strategy,High,High
+Success Criterion - Statement Availability
+Success Criterion - Achievements And Compliance
+Success Criterion - Governance Over Time
+Success Criterion - Onboarding New Members
+Success Criterion - Documentation
+Success Criterion - Renewable Showcasing
+5.2 Assign a Sustainability Representative,Medium,Low
+Success Criterion - Ecological Referee
+5.3 Raise Awareness and Inform,Medium,Medium
+Success Criterion - Inform And Train
+Success Criterion - Active Participation
+5.4 Communicate the Ecological Impact of User Choices,Medium,Medium
+Success Criterion - Impact Communication
+5.5 Estimate a Product or Service's Environmental Impact,Medium,Medium
+Success Criterion - Life-cycle Analysis
+Success Criterion - Competitor Analysis
+5.6 Define Clear Organizational Sustainability Goals and Metrics,Low,Medium
+Success Criterion - Sustainability Goals
+5.7 Verify Your Efforts Using Established Third-Party Business Certifications,Medium,Medium
+Success Criterion - Certification Achievement
+Success Criterion - Certification Maintenance
+5.8 Implement Sustainability Onboarding Guidelines,High,Medium
+Success Criterion - Training Materials
+Success Criterion - Progress Incentivisation
+Success Criterion - Negative Variables
+5.9 Support Mandatory Disclosures and Reporting,Medium,Medium
+Success Criterion - Policies And Practices
+Success Criterion - Impact Report
+Success Criterion - Standards And Policies
+Success Criterion - Impact Reduction
+5.10 Create One or More Impact Business Models,High,Medium
+Success Criterion - Theory Of Change
+5.11 Follow a Product Management and Maintenance Strategy,High,Low
+Success Criterion - Management And Maintenance
+Success Criterion - Planning Strategy
+Success Criterion - Resourcing Products
+Success Criterion - Resource Measurement
+5.12 Implement Continuous Improvement Procedures,High,High
+Success Criterion - Continuous Improvement
+Success Criterion - Agile Reviews
+Success Criterion - Iterative Consideration
+Success Criterion - Functionality Decisions
+Success Criterion - Security Updates
+Success Criterion - Skills And Maintenance
+5.13 Document Future Updates and Evolutions,Low,Low
+Success Criterion - Feature Changes
+5.14 Establish if a Digital Product or Service Is Necessary,High,Low
+Success Criterion - Sustainable Development Goals
+Success Criterion - Creation Evaluation
+Success Criterion - Avoid Duplication
+Success Criterion - Obstacle Consideration
+5.15 Determine the Functional Unit,Medium,Medium
+Success Criterion - Life-cycle Assessment
+5.16 Create a Supplier Standards of Practice,High,High
+Success Criterion - Vetting Potential Partners
+Success Criterion - Collaborative Measurement
+Success Criterion - Informative Partner Promotion
+5.17 Share Economic Benefits,High,Medium
+Success Criterion - Living Wage
+Success Criterion - Incentivisation
+Success Criterion - Employee Benefits
+Success Criterion - Legislation Advocation
+5.18 Share Decision-Making Power With Appropriate Stakeholders,Low,High
+Success Criterion - Decision-Making
+5.19 Use Justice, Equity, Diversity, Inclusion (JEDI) Practices,High,High
+Success Criterion - JEDI Practices
+Success Criterion - Accessibility Policy
+Success Criterion - JEDI Training
+Success Criterion - JEDI Improvements
+Success Criterion - JEDI Legislation
+5.20 Promote Responsible Data Practices,High,Medium
+Success Criterion - Privacy Policy
+Success Criterion - Data Ownership
+Success Criterion - Data Protection
+5.21 Implement Appropriate Data Management Procedures,Low,High
+Success Criterion - Outdated Content
+Success Criterion - Data Controllers
+5.22 Promote and Implement Responsible Emerging Technology Practices,High,Medium
+Success Criterion - Emerging Technologies
+Success Criterion - Disruptive Technology
+Success Criterion - Technology Legislation
+5.23 Include Responsible Financial Policies,High,High
+Success Criterion - Fuel Divestment
+Success Criterion - Responsible Finance
+5.24 Include Organizational Philanthropy Policies,High,Medium
+Success Criterion - Philanthropy Policy
+Success Criterion - Voluntary Work
+5.25 Plan for a Digital Product or Service's Care and End-of-Life,Medium,Medium
+Success Criterion - End-of-life Care
+5.26 Include E-Waste, Right-To-Repair, and Recycling Policies,High,Medium
+Success Criterion - E-Waste Policy
+Success Criterion - Recycling And Repairing
+Success Criterion - Refurbishment Strategy
+5.27 Define Performance and Environmental Budgets,Medium,Medium
+Success Criterion - Environmental Budget
+Success Criterion - Performance Budget
+Success Criterion - Measurable Improvements
+Success Criterion - Capacity And Maintenance
+5.28 Use Open Source Tools,High,High
+Success Criterion - Open Source Policy
+Success Criterion - Collaboration
+Success Criterion - Contribution
