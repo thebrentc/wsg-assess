@@ -1,4 +1,4 @@
-class Generator {
+class WSGParser {
     constructor() {
         this.url = 'https://w3c.github.io/sustyweb/'
         document.getElementById('generate-button').addEventListener(
@@ -13,7 +13,6 @@ class Generator {
         async function request(self) {
             const response = await fetch(self.url)
             const content = await response.text()
-            //console.log(content)
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(content, 'text/html')
 
@@ -62,5 +61,5 @@ class Generator {
     } 
 }
 
-let generator = new Generator()
-generator.generate();
+let wsgParser = new WSGParser()
+wsgParser.generate();
