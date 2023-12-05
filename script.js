@@ -1,23 +1,26 @@
 class WSGParser {
     constructor() {
         this.url = 'https://w3c.github.io/sustyweb/'
-        document.getElementById('generate-button').addEventListener(
+		// to store parsed WSG data
+		this.wsg = null
+        document.getElementById('generate-json-button').addEventListener(
             "click",
             function () {
-                this.generate()
+                this.generateJSON()
             }.bind(this)
         );
     }
 
-    generate() {
+    parse() {
         async function request(self) {
             const response = await fetch(self.url)
             const content = await response.text()
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(content, 'text/html')
 
-            var output = ""
-            var br = "\n"
+			self.wsg = {
+				'sections': {}
+			}
             let sections = htmlDoc.getElementsByTagName('section') 
             /* Get relevant sections */
             let excludes = [ 'introductory', 'informative', 'appendix' ]
@@ -26,40 +29,59 @@ class WSGParser {
                 /* Get Section heading */
                 let h2 = section.querySelector('h2[id^=x]')
                 if (h2) {
-                    output += h2.innerText + br
+					var sectionId = h2.getAttribute('id')
+					self.wsg.sections[sectionId] = {
+						'id': sectionId,
+						'title': h2.innerText,
+						'guidelines': {},
+						'impact': null,
+						'effort': null
+					}
                     /* Get Guidelines */
                     let guidelineSections = section.querySelectorAll('section')
                     for (let guidelineSection of guidelineSections) {
                         /* Get Guideline heading */
                         let h3 = guidelineSection.querySelector('h3[id^=x]')
-                        if (h3) {
-                            output += h3.innerText + br
+                        if (h3) {						
+							var guidelineId = h3.getAttribute('id')
+							self.wsg.sections[sectionId].guidelines[guidelineId] = {
+								'id': guidelineId,
+								'title': h3.innerText,
+								'successCriteria': {}
+							}
                             /* Get Guideline impact and effort ratings */
                             let ratings = guidelineSection.querySelectorAll('dd') 
-                            let impact = ratings[0]
-                            let effort = ratings[1]
-                            output += 'Impact: ' + impact.innerText + br
-                            output += 'Effort: ' + effort.innerText + br
-
+                            let impact = ratings[0].innerText
+                            let effort = ratings[1].innerText
+							self.wsg.sections[sectionId].guidelines[guidelineId].impact = impact
+							self.wsg.sections[sectionId].guidelines[guidelineId].effort = effort
                         }
                         /* Get Guideline Details: Success criteria */
                         let successCriteria = guidelineSection.querySelectorAll('section')
                         for (let successCriterion of successCriteria) {
                             let h4 = successCriterion.querySelector('h4[id^=success-criterion]')
                             if (h4) {
-                                output += h4.innerText + br
-                                let prev = h4
+								let successCriterionId = h4.getAttribute('id')
+								let description = successCriterion.querySelector('p').innerText
+								self.wsg.sections[sectionId].guidelines[guidelineId].successCriteria[successCriterionId] = {
+									'id': successCriterionId,
+									'title': h4.innerText,
+									'description': description
+								}
                             }
-                            let description = successCriterion.querySelector('p')
                         }
                     }
                 }
             }
-            document.body.innerHTML += '<pre>' + output + '</pre>';
         }
         request(this)
     } 
+
+	generateJSON() {
+		if (!this.wsq) { this.parse() }
+		document.getElementById('output').innerHTML = '<pre>' + JSON.stringify(this.wsg, null, 2) + '</pre>'
+	}
 }
 
 let wsgParser = new WSGParser()
-wsgParser.generate();
+wsgParser.parse();
