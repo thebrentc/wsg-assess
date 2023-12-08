@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <button id="generate-json-button">Show JSON</button>
-	<button id="generate-csv-button">Generate CSV</button>
+	<h1>WSG Parser</h1>
+	<p>Parses Web Sustainability Guidelines (WSG) 1.0 from <a href="https://w3c.github.io/sustyweb/">https://w3c.github.io/sustyweb/</a></p>
+
+	<button id="json-button">JSON</button>
+	<button id="csv-button">CSV</button>
 
 	<section class="results">
 		<button id="copy-button">Copy</button>
+		<br/>
 		<textarea id="output"></textarea>
 	</section>
+
+	<footer>
+		<a href="https://github.com/brent-dxw/wsg-assess">https://github.com/brent-dxw/wsg-assess</a>
+	</footer>
+
 	<script src="wsgparser.js"></script>
 	<script src="script.js"></script>
   </body>
