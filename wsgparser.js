@@ -1,10 +1,12 @@
 class WSGParser {
-    constructor() {
+    constructor(callback = null) {
         this.url = 'https://w3c.github.io/sustyweb/'		
 		this.wsg = null // to store parsed WSG data
+		this.callback = callback
+		this.parse()
     }
 
-    parse() {
+    async parse() {
         async function request(self) {
             const response = await fetch(self.url)
             const content = await response.text()
@@ -70,15 +72,16 @@ class WSGParser {
                 }
             }
         }
-        request(this)
+        await request(this)
+		if (this.callback) { this.callback() }
     } 
 
-	generateJSON() {
-		if (!this.wsq) { this.parse() }
-		document.getElementById('output').innerHTML = '<pre>' + JSON.stringify(this.wsg, null, 2) + '</pre>'
+	getJSON() {
+		if (!this.wsg) { this.parse() }
+		return JSON.stringify(this.wsg, null, 2)
 	}
 
-	generateCSV(self) {
+	getCSV() {
 		var csv = ""
 		csv += '<h1>' + 'WSG Sections and Guidelines and Success criteria' + '</h1>' + "\n"
 		var defaultHeadings = 'Title,Link,Impact,Effort,Description'
