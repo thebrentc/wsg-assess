@@ -1,0 +1,27 @@
+html {
+	height: 100%;
+}
+body {
+	height: 90%;
+	min-height: 90%;
+}
+
+button {
+	margin: 0.6em;
+}
+
+.results {
+	margin-top: 1em;
+	height: 90%;
+}
+
+#output {
+	width: 98%;
+	min-height: 66%;
+}
+
+#copy-button.visited:after {
+	content: '√';
+	color: green;
+	font-size: 75%;
+}
