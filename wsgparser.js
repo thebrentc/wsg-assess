@@ -88,16 +88,16 @@ class WSGParser {
 		var userHeadings = 'Status,Notes'
 		csv += defaultHeadings + ',' + userHeadings + "\n"
 		for (const sectionId in this.wsg.sections) {
-			csv += '<a href="'+ this.wsg.sections[sectionId].link +'">' + '"' + this.wsg.sections[sectionId].title + '"' + '<a/>' 
+			csv += '"' + this.wsg.sections[sectionId].title + '"'
 			csv += ',' + this.wsg.sections[sectionId].link + "\n"
 			for (const guidelineId in this.wsg.sections[sectionId].guidelines) {
 				var guideline = this.wsg.sections[sectionId].guidelines[guidelineId]
-				csv += '<a href="'+ guideline.link +'">' + '"' + guideline.title + '"' + '</a>'
+				csv += '"' + guideline.title + '"'
 				csv += ',' + guideline.link 
 				csv += ',' + guideline.impact + ',' + guideline.effort + "\n"
 				for (const successCriterionId in guideline.successCriteria) {
 					let successCriterion = guideline.successCriteria[successCriterionId]
-					csv += '<a href="'+ successCriterion.link +'">' + '"' + successCriterion.title + '"' + '</a>'
+					csv += '"' + successCriterion.title + '"'
 					csv += ',' + successCriterion.link
 					csv += ',' + ',,' + '"' + successCriterion.description + '"' + "\n"
 				}
